@@ -79,9 +79,6 @@ Before you start, ensure you have the following:
 ---
 
 Let me know if you have any questions or run into issues during the setup!
-```
-
----
 
 ### Summary of Steps in the README:
 
@@ -93,7 +90,5 @@ Let me know if you have any questions or run into issues during the setup!
 6. **Download the required APK** (e.g., YouTube), ensure the version is compatible with the patches, and rename it to `input.apk`.
 7. **Patch the APK** using the `patch` command.
 8. **Install the patched APK** on your device (optional).
-
----
 
 Feel free to customize it further, or let me know if you need any additional help!
