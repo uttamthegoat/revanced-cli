@@ -1,0 +1,7 @@
+*-temporary-files
+apks
+*.apk
+*.apkm
+*.jar
+*.rvp
+*.keystore
