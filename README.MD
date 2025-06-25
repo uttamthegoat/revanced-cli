@@ -34,15 +34,30 @@ Before you start, ensure you have the following:
    If the `revanced-cli.jar` file is working correctly, you should see a help message listing available commands.
 
 ### 4. **Download the `patches.rvp` File:**
+
+#### For ReVanced
    Download the `.rvp` file from the **revanced-patches** GitHub releases page:
    - Go to the [revanced-patches GitHub releases page](https://github.com/ReVanced/revanced-patches/releases).
-   - Download the latest `.rvp` file and rename it to `patches.rvp`
-   - Move the `patches.rvp` file to the `revanced-cli` folder
 
-### 5. **Check if the `patches.rvp` File Works:**
+#### For ReVanced Extended
+   Download the `.rvp` file from the **revanced-extended-patches** GitHub releases page:
+   - Go to the [revanced-patches GitHub releases page](https://https://github.com/inotia00/revanced-patches/releases).
+
+
+   - Download the latest `.rvp` file and rename it to `x-patches.rvp`
+   - Move the `x-patches.rvp` file to the `revanced-cli` folder
+
+### 5. **Check if the `patches.rvp` and the `x-patches.rvp` File Works:**
+#### ReVanced
    To verify that the patches are correctly loaded, run the following command:
    ```bash
    java -jar revanced-cli.jar list-patches --with-packages --with-versions --with-options patches.rvp
+   ```
+   This command should list all the available patches and options that are included in the `patches.rvp` file.
+#### ReVanced Extended
+   To verify that the patches are correctly loaded, run the following command:
+   ```bash
+   java -jar revanced-cli.jar list-patches --with-packages --with-versions --with-options x-patches.rvp
    ```
    This command should list all the available patches and options that are included in the `patches.rvp` file.
 
@@ -56,12 +71,16 @@ Before you start, ensure you have the following:
    Now, you can patch the APK file using **revanced-cli**. Run the following command:
    ```bash
    java -jar revanced-cli.jar patch -p patches.rvp input.apk
+   # --- or ---
+   java -jar revanced-cli.jar patch -p x-patches.rvp input.apk
    ```
    This will apply the patches from `patches.rvp` to the `input.apk` file. The patched APK will be saved as `output.apk` in the same directory.
 
    If you want to specify a different output file name, you can use the `-o` option:
    ```bash
    java -jar revanced-cli.jar patch -p patches.rvp input.apk -o patched-youtube.apk
+      # --- or ---
+   java -jar revanced-cli.jar patch -p x-patches.rvp input.apk -o patched-youtube.apk
    ```
 
 ### 8. **Install the Patched APK on Your Android Device (Optional):**
