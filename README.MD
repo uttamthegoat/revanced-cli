@@ -111,3 +111,14 @@ Let me know if you have any questions or run into issues during the setup!
 8. **Install the patched APK** on your device (optional).
 
 Feel free to customize it further, or let me know if you need any additional help!
+
+# Note
+#### 1. **patches.rvp** (Revanced patches) work for
+- Youtube
+- Youtube Music
+- Google Photos and many more
+
+#### 2. **x-patches.rvp** (Revanced Extended patches - has more features than Revanced patches) work only for
+- Youtube
+- Youtube Music
+
